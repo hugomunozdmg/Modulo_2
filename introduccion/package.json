@@ -10,7 +10,10 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node ejercicios.js",
+    "start5": "node ./app/index_5.js"
   },
-  "dependencies": {}
+  "dependencies": {
+    "exact-math": "^2.2.3"
+  }
 }
