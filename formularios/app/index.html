@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div>
+        <div>
+            <label for="">Name:</label>
+            <input id="name-input" type="text">
+        </div>
+        <div>
+            <label for="">Username:</label>
+            <input id="username-input" type="text">
+        </div>
+        <button onclick="send()">send</button>
+    </div> -->
+
+    <form id="form" action="http://localhost:3000/query/12234/" method="get">
+        <div>
+            <label for="">Name:</label>
+            <input id="name-input" type="text" name="name">
+        </div>
+        <div>
+            <label for="">Username:</label>
+            <input id="username-input" type="text" name="username">
+        </div>
+        <button type="submit">send</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

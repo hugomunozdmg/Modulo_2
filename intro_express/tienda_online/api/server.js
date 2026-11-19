@@ -18,7 +18,6 @@ app.get("/add-product/:department/:name/:price/:stock", (req, res) => {
     const department = req.params.department
     delete req.params.department
 
-    console.log(req.params)
     almacen.forEach(d => {
         if (d.nombre == department) {
             d.productos.push({
