@@ -10,13 +10,28 @@
 <body>
     <div id="users-list"></div>
 
+    <form action="" method="">
+        <input type="text">
+    </form>
     <script>
-        fetch("http://localhost:3000/users").then(res => res.json()).then(data => {
-            data.users.forEach(user => {
-                document.getElementById("users-list").innerHTML += 
-                `<p>${user.name}</p>`
-            })
+        // fetch("http://localhost:3000/users").then(res => res.json()).then(data => {
+        //     data.users.forEach(user => {
+        //         document.getElementById("users-list").innerHTML +=
+        //             `<p>${user.name}</p>`
+        //     })
 
+        // })
+
+        fetch("http://localhost:3000/2/?data2=4", {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                datosTochos: [1, 2, 3, 4]
+            })
+        }).then(res => res.json()).then(data => {
+            console.log(data)
         })
     </script>
 </body>
