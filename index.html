@@ -10,9 +10,25 @@
 <body>
     <div id="users-list"></div>
 
-    <form action="" method="">
+    <!-- <form action="" method="">
         <input type="text">
-    </form>
+    </form> -->
+    <div>
+        <div>
+            <label for="">Nombre:</label>
+            <input id="input-name" type="text">
+        </div>
+        <div>
+            <label for="">Apellido:</label>
+            <input id="input-surname" type="text">
+        </div>
+        <div>
+            <label for="">Edad:</label>
+            <input id="input-age" type="text">
+        </div>
+        <button id="person-btn">add person</button>
+    </div>
+    <div id="container"></div>
     <script>
         // fetch("http://localhost:3000/users").then(res => res.json()).then(data => {
         //     data.users.forEach(user => {
@@ -22,18 +38,19 @@
 
         // })
 
-        fetch("http://localhost:3000/2/?data2=4", {
-            method: "DELETE",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                datosTochos: [1, 2, 3, 4]
-            })
-        }).then(res => res.json()).then(data => {
-            console.log(data)
-        })
+        // fetch("http://localhost:3000/2/?data2=4", {
+        //     method: "DELETE",
+        //     headers: {
+        //         "Content-Type": "application/json"
+        //     },
+        //     body: JSON.stringify({
+        //         datosTochos: [1, 2, 3, 4]
+        //     })
+        // }).then(res => res.json()).then(data => {
+        //     console.log(data)
+        // })
     </script>
+    <script src="ejercicios.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "empezar": "node index.js"
+    "empezar": "node index.js",
+    "up": "node ejercicios.js"
   },
   "keywords": [],
   "author": "",
