@@ -1,7 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "up": "node ejercicios.js"
   },
   "dependencies": {
     "cors": "^2.8.6",
